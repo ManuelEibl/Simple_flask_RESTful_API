@@ -39,7 +39,7 @@ class ProductSchema(ma.Schema):
     class Meta:
         fields = ('id', 'name', 'description', 'price', 'quantity')
 
-# Init schema
+# Init Schema
 product_schema = ProductSchema()
 products_schema = ProductSchema(many=True)
 
