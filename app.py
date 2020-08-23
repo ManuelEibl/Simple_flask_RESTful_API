@@ -43,7 +43,7 @@ class ProductSchema(ma.Schema):
 product_schema = ProductSchema()
 products_schema = ProductSchema(many=True)
 
-# Create Product
+# Create product
 @app.route('/product', methods=['POST'])
 def add_product():
     name = request.json['name']
